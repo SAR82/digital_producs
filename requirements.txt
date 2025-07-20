@@ -5,3 +5,7 @@ sqlparse==0.5.3
 
 # photo and iamge
 pillow==11.3.0
+
+#Django Rest Framework
+djangorestframework==3.16.0
+djangorestframework_simplejwt==5.5.0

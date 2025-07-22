@@ -2,6 +2,7 @@
 asgiref==3.9.1
 Django==5.2.4
 sqlparse==0.5.3
+requests==2.32.4
 
 # photo and iamge
 pillow==11.3.0

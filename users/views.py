@@ -26,7 +26,6 @@ class RegisterView(APIView):
         except User.DoesNotExist:
             user = User.objects.create_user(phone_number=phone_number)
         
-        
 
         device = Device.objects.create(user=user)
 

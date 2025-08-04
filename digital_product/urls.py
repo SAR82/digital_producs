@@ -18,6 +18,8 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from chatbot.views import chat_with_bot
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,6 +27,8 @@ urlpatterns = [
     path('', include('users.urls')),
     path('sub/', include('subscriptions.urls')),
     path('payment/', include('payments.urls')),
+    path('api/chat/', chat_with_bot, name='chat-with-bot'),
+
 
 ]
 
